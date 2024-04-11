@@ -16,12 +16,11 @@ import javax.swing.table.DefaultTableModel;
  */
 public class jf_TPO5 extends javax.swing.JFrame {
     private static ArrayList<Producto> productos=new ArrayList<>();
-    private DefaultTableModel modelo=new DefaultTableModel();
-    
-        
+    private DefaultTableModel modelo=new DefaultTableModel(){ 
     public boolean isCellEditable(int f,int c){
         return false;
-    }
+        }
+    };
     /**
      * Creates new form jf_TPO4
      */
